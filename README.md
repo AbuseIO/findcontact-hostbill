@@ -26,15 +26,17 @@ add the following line to providers array in the file config/app.php:
 ## Configuration
 
 
-Replace the null value in ````'appid' => null,```` with your application id, e.g.
+Replace the false value in ````'url' => false, 'app_id' => false, api_key => false```` with your application config, e.g.
     
     <?php
     
     return [
         'findcontact-hostbill' => [           
-            'appid'          => 'MyAppId,
             'enabled'        => true,
             'auto_notify'    => false,
+            'url'            => false,
+            'api_id'         => false,
+            'api_key'        => false,
         ],
     ];
 
